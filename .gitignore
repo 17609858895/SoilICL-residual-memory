@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+pilot/_deps/
+pilot/data/
+pilot/results/
+outputs/
+*.npz
+*.npy
+*.parquet
+*.joblib
+*.pt
+*.csv.gz

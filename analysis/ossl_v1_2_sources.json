@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "ossl_soilsite_L0_v1.2.csv.gz",
+    "url": "https://storage.googleapis.com/soilspec4gg-public/ossl_soilsite_L0_v1.2.csv.gz",
+    "bytes": 6371319,
+    "sha256": "7dffacfbbce8f1d77b5f76f33b2182e963bb846bcd8e56a0df1fa0dc6974b6b2"
+  },
+  {
+    "filename": "ossl_soillab_L1_v1.2.csv.gz",
+    "url": "https://storage.googleapis.com/soilspec4gg-public/ossl_soillab_L1_v1.2.csv.gz",
+    "bytes": 9597417,
+    "sha256": "29554a5aab85e942373885d1f300c84caa94e7888ee28f0f44a6d9cc7bce80d9"
+  },
+  {
+    "filename": "ossl_visnir_L0_v1.2.csv.gz",
+    "url": "https://storage.googleapis.com/soilspec4gg-public/ossl_visnir_L0_v1.2.csv.gz",
+    "bytes": 182503251,
+    "sha256": "e5a08c0deda182b7c123505c9f39adf9f5c9f6313c0022e74c51bc1f10b27a83"
+  },
+  {
+    "filename": "ossl_mir_L0_v1.2.csv.gz",
+    "url": "https://storage.googleapis.com/soilspec4gg-public/ossl_mir_L0_v1.2.csv.gz",
+    "bytes": 420088016,
+    "sha256": "8bfed513e9b565664c67b308fa253d3c401d977bef5b75529dc85ffbef2a4118"
+  }
+]
