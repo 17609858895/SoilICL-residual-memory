@@ -76,6 +76,17 @@ python analysis/analyse_transferable_error.py \
 
 For an existing frozen run, point both analysis scripts to its `pilot/results` directory with `--pilot-results`. In addition to the supplied matched, paired and MIR phase tables, the transferable-error script reads the branch arrays and saved query predictions for the five VisNIR spatial folds, the VisNIR and MIR source holdouts, and the stored MIR confirmation predictions. It checks that the reconstructed LRM corrections match the stored predictions before evaluating the readouts. Paired group resampling describes uncertainty conditional on these predictions. The coherence score and branch agreement can be computed with the query spectrum and training-side residuals, while the analyses linking them to accuracy use the observed query outcomes retrospectively.
 
+### Coherence of the applied correction and locality of residual information
+
+`analysis/analyse_coherence.py` computes the coherence c = δ²/τ² of the applied LRM correction, the expected-benefit condition c > 2, label-free rankings (coherence, expected benefit, correction magnitude, neighbour closeness and spread), and residual memories restricted to same-source neighbour-rank bands or to other sources. It reads the VisNIR fold and source-holdout branch arrays and the VisNIR metadata (for reference-source labels) and refits nothing.
+
+```sh
+python analysis/analyse_coherence.py \
+  --pilot-results pilot/results \
+  --visnir-meta pilot/data/visnir_soc_meta.parquet \
+  --output outputs/coherence
+```
+
 ## Verification
 
 The local frozen-input rerun reproduced 19 existing aggregate result tables to numerical tolerance. The grouped baseline's existing synthetic aggregation checks cover incomplete folds, changed query identities, and equivalence of the shared residual correction. The release check used existing frozen model outputs for the statistical analyses.
